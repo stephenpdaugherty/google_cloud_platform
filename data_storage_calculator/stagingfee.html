@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+		<style>
+			* {
+				padding: 0 0 0 0;
+				margin: 0 0 0 0;
+			}
+			* {
+				font-family: 'Nunito', sans-serif;
+			}
+			form {
+				width: 400px;
+				background: #D2E8F5;
+				margin: auto;
+				margin-top: 50px;
+				padding: 40px 10px 30px 10px;
+				border-radius: 10px;
+			}
+			form > h1,h3,p,input {
+				margin-bottom: 20px;
+			}
+			form > h1 {
+				margin-left: 30px;
+			}
+			form > h3,p,input {
+				margin-left: 50px;
+			}
+			input {
+				width: 300px;
+				height: 30px;
+			}
+			p { font-size: 20px; }
+		</style>
+	</head>
+
+	<body>
+		<form action="#" method="get" autocomplete="off">
+			<h1>Staging Bucket Fee Tool</h1>
+			<h3>
+				Staging Price (as of 01/22/2020):<br>
+				$0.026 Per GB Per Month
+			</h3>
+			<p>Notice to Begin Rehydration Date:</p>
+			<input type="Date" name="start" required>
+			<p>Rehydration Completion Date:</p>
+			<input type="Date" name="end" required>
+			<p>Total GB:</p>
+			<input type="text" name="size" required><br><br><br>
+			<input type="submit"><br>
+			<input type="reset"><br>
+		</form>
+	</body>
+
+</html>
