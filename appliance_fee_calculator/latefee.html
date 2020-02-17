@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <style>
+            * {
+                padding: 0 0 0 0;
+                margin: 0 0 0 0;
+                font-family: 'Roboto', sans-serif;
+                outline: none;
+            }
+            form {
+                width: 400px;
+                margin: auto;
+                margin-top: 50px;
+                background: #A1BFBF;
+                padding: 30px 0px 30px 0px;
+                border-radius: 10px;
+            }
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            h3 {
+                margin-left: 65px;
+                margin-bottom: 20px;
+            }
+            p {
+                margin-left: 65px;
+                margin-bottom: 5px;
+                margin-top: 20px;
+            }
+            input {
+                margin-left: 65px;
+                width: 270px;
+                margin-bottom: 20px;
+                height: 40px;
+                border-radius: 3px;
+                border-style: none;
+            }
+            select {
+                margin-left: 65px;
+                width: 270px;
+                margin-bottom: 40px;
+                height: 40px;
+                border-radius: 3px;
+                border-style: none;
+				background: #FFFFFF;
+            }
+			.buttons:hover {
+				background: #909191;
+				color: #FFFFFF;
+			}
+        </style>
+    </head>
+    <body>
+
+        <form autocomplete="off" action="#" method="get">
+            <h1>Late Fee Calculator</h1>
+            <h3>
+                TA100: $30 USD Per Day<br>
+                TA480: $90 USD Per Day<br>
+                Business Days<br>
+            </h3>
+            <p>First Late Day:</p>
+            <input type="date" name="start" required>
+            <p>Final Late Day:</p>
+            <input type="date" name="end" required>
+            <p>Selection:</p>
+            <select name="appliance" required>
+                <option value="ta100">TA100</option>
+                <option value="ta480">TA480</option>
+            </select><br>
+            <input type="submit" class="buttons"><br>
+            <input type="reset" class="buttons"><br>
+        </form>
+
+    </body>
+</html>
